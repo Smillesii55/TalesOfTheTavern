@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 using Data.Models;
+using Data.Models.Items;
 namespace Data.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
@@ -16,6 +17,6 @@ namespace Data.Data
         {
         }
 
-        // Voeg DbSet-properties toe voor je andere entiteiten
+        public DbSet<Weapon> Weapons { get; set; }
     }
 }

@@ -1,0 +1,36 @@
+﻿/* link-styles.css */
+
+/* ====================================================
+   Link Styles
+   ==================================================== */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    position: relative;
+    transition: color var(--transition-duration) var(--transition-easing);
+}
+
+    a::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        left: 0;
+        bottom: -2px;
+        background: var(--link-hover-color);
+        transition: width var(--transition-duration) var(--transition-easing);
+    }
+
+    a:hover {
+        color: var(--link-hover-color);
+        text-shadow: 0 0 5px rgba(255, 204, 102, 0.8);
+    }
+
+        a:hover::after {
+            width: 100%;
+        }
+
+/* Disable hover effect for the navbar-brand */
+.navbar-brand::after {
+    display: none;
+}

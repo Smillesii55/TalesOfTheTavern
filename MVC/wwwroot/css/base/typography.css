@@ -1,0 +1,17 @@
+﻿/* typography.css */
+
+/* ====================================================
+   Typography
+   ==================================================== */
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    color: var(--primary-color);
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+p {
+    color: var(--text-color);
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+}

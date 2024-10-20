@@ -1,0 +1,36 @@
+﻿/* variables.css */
+
+/* ====================================================
+   Import Fonts
+   ==================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+/* ====================================================
+   Root Variables
+   ==================================================== */
+:root {
+    /* Primary Colors */
+    --primary-color: #a37c27; /* Deep gold */
+    --secondary-color: #4d2e1e; /* Dark brown */
+    --accent-color: #ffd700; /* Bright gold for accents and highlights */
+    /* Background Colors */
+    --background-color: #1f1b18; /* Dark background with warm tint */
+    --overlay-color: rgba(31, 27, 24, 0.7); /* Semi-transparent overlay */
+    --navbar-bg-color: rgba(31, 27, 24, 0.95); /* Transparent dark navbar */
+    --footer-bg-color: rgba(31, 27, 24, 0.95); /* Transparent dark footer */
+    --form-bg-color: rgba(77, 46, 30, 0.8); /* Dark wood color for forms */
+    /* Text Colors */
+    --text-color: #e0d8b0; /* Muted parchment-like text color */
+    --link-color: #d4af37; /* Gold color for links */
+    --link-hover-color: #ffcc66; /* Lighter gold for hover */
+    /* Transition Variables */
+    --transition-duration: 0.3s; /* Standard transition duration */
+    --transition-easing: ease; /* Standard transition easing */
+    /* Shadow Colors */
+    --shadow-color: rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    /* Button Colors */
+    --btn-primary-bg: #a37c27; /* Deep gold button background color */
+    --btn-primary-border: #a37c27; /* Deep gold button border color */
+    --btn-primary-hover-bg: #ffcc66; /* Lighter gold button hover background color */
+    --btn-primary-hover-border: #ffcc66; /* Lighter gold button hover border color */
+}

@@ -1,0 +1,17 @@
+﻿/* main-content.css */
+
+/* ====================================================
+   Hoofdinhoud
+   ==================================================== */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+    .main-content .auth-container,
+    .main-content .updates-section {
+        flex: 1;
+        max-width: 400px;
+    }

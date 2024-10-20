@@ -1,0 +1,56 @@
+﻿.auth-container{
+    background-color: rgba(50, 50, 50, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--shadow-color);
+    color: var(--text-color);
+    font-family: 'Cinzel', serif;
+    border: 2px solid var(--primary-color);
+    margin: 20px;
+    width: 400px;
+}
+
+    .auth-container h2{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+/* Voorkom stijlverandering bij autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px rgba(50, 50, 50, 0.9) inset !important;
+    -webkit-text-fill-color: var(--text-color) !important;
+}
+
+/* Extra styling voor invoervelden */
+.auth-container .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+}
+
+.auth-container .btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.auth-container p {
+    text-align: center;
+}
+
+/* Responsiviteit */
+@media (max-width: 600px) {
+    .auth-container{
+        width: 100%;
+        margin: 10px;
+        padding: 1rem;
+    }
+}

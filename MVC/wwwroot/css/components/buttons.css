@@ -1,0 +1,67 @@
+﻿/* buttons.css */
+
+/* ====================================================
+   Button Styles
+   ==================================================== */
+.btn {
+    transition: transform var(--transition-duration) var(--transition-easing), box-shadow var(--transition-duration) var(--transition-easing);
+}
+
+    .btn:hover,
+    .btn:focus {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px var(--shadow-color);
+    }
+
+/* Primary Button Styles */
+.btn-primary {
+    background-color: var(--btn-primary-bg);
+    border-color: var(--btn-primary-border);
+    color: #1c1c1c;
+    font-family: 'Cinzel', serif;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: background-color var(--transition-duration) var(--transition-easing), border-color var(--transition-duration) var(--transition-easing), transform var(--transition-duration) var(--transition-easing), box-shadow var(--transition-duration) var(--transition-easing);
+}
+
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active,
+    .btn-primary.active {
+        background-color: var(--btn-primary-hover-bg);
+        border-color: var(--btn-primary-hover-border);
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px var(--shadow-color);
+    }
+
+    .btn-primary::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: rgba(255, 255, 255, 0.2);
+        transform: rotate(45deg);
+        transition: all 0.5s;
+    }
+
+    .btn-primary:hover::before {
+        top: 150%;
+        left: 150%;
+    }
+
+/* ====================================================
+   Form Focus Styles
+   ==================================================== */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem var(--primary-color);
+}

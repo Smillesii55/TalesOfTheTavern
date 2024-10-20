@@ -1,0 +1,73 @@
+﻿/* footer.css */
+
+/* ====================================================
+   Footer Styles
+   ==================================================== */
+/* Zorg ervoor dat de container de resterende ruimte inneemt */
+.container {
+    flex: 1;
+    padding-top: 2rem; /* Toegevoegd: Verhoog de top padding indien nodig */
+    padding-bottom: 3rem; /* Toegevoegd: Extra ruimte aan de onderkant */
+}
+
+.footer {
+    background-color: var(--footer-bg-color);
+    color: var(--text-color);
+    font-family: 'Cinzel', serif;
+    border-top: 1px solid var(--primary-color);
+    text-align: center;
+    padding: 10px 0; /* Verlaag de padding om de hoogte te verminderen */
+    margin-top: auto; /* Zorgt ervoor dat de footer naar de onderkant wordt geduwd */
+}
+
+    .footer h5 {
+        color: var(--accent-color);
+        transition: color var(--transition-duration) var(--transition-easing);
+        margin-bottom: 0.5rem; /* Verlaag de marge */
+    }
+
+    .footer p, .footer a, .footer .fab {
+        margin-bottom: 0.5rem; /* Verlaag de marge onder paragrafen en links */
+        font-size: 0.9rem; /* Verklein de lettergrootte indien gewenst */
+    }
+
+        .footer a.footer-link {
+            color: var(--text-color) !important;
+            position: relative;
+            display: inline-block;
+            transition: transform var(--transition-duration) var(--transition-easing), color var(--transition-duration) var(--transition-easing), text-shadow var(--transition-duration) var(--transition-easing);
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+            .footer a.footer-link::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+                width: 0%;
+                height: 2px;
+                background-color: var(--accent-color);
+                transition: width var(--transition-duration) var(--transition-easing);
+            }
+
+            .footer a.footer-link:hover,
+            .footer a.footer-link.active {
+                color: var(--accent-color) !important;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+                transform: scale(1.05);
+            }
+
+                .footer a.footer-link:hover::after,
+                .footer a.footer-link.active::after {
+                    width: 100%;
+                }
+
+    .footer .fab {
+        transition: color var(--transition-duration) var(--transition-easing), transform var(--transition-duration) var(--transition-easing);
+    }
+
+        .footer .fab:hover {
+            color: var(--accent-color);
+            transform: scale(1.2);
+        }

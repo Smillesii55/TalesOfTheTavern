@@ -1,0 +1,73 @@
+﻿/* header.css */
+
+/* ====================================================
+   Header Stijlen
+   ==================================================== */
+.header {
+    display: flex;
+    flex-direction: column; /* Veranderd van row naar column */
+    align-items: center; /* Centreert de items horizontaal */
+    position: relative;
+}
+
+/* Logo */
+.logo-container {
+    position: relative;
+}
+
+.logo {
+    max-width: 200px; /* Pas aan naar wens */
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: -50px; /* Negatieve marge om de afbeelding omhoog te laten komen */
+    z-index: 1;
+}
+
+/* Titel in een bordje zonder hanger */
+.title-sign {
+    display: inline-block;
+    background-color: rgba(50, 50, 50, 0.9); /* Zelfde als containers */
+    padding: 20px 40px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    position: center;
+    z-index: 2;
+    margin-bottom: 20px; /* Ruimte onder het titelbordje */
+}
+
+    .title-sign h1 {
+        color: var(--text-color);
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+/* Quote in een bordje met grijze kettinghanger */
+.quote-sign {
+    display: inline-block;
+    background-color: rgba(50, 50, 50, 0.9); /* Zelfde als containers */
+    padding: 10px 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+    /* Grijze kettinghanger */
+    .quote-sign::before {
+        content: '';
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 30px;
+        background-color: #6c757d; /* Grijze ketting */
+    }
+
+    .quote-sign p {
+        color: var(--text-color);
+        margin: 0;
+        font-style: italic;
+    }

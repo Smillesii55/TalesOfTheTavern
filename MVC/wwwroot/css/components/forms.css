@@ -1,0 +1,73 @@
+﻿/* forms.css */
+
+/* ====================================================
+   Form Styles
+   ==================================================== */
+/* Stijl voor velden met standaardwaarde */
+.default-value {
+    background-color: var(--form-bg-color);
+    color: #aaa; /* Lichtere tekstkleur voor standaardwaarden */
+    font-style: italic;
+}
+
+/* Wanneer de gebruiker het veld wijzigt */
+.form-control:not(.default-value) {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-style: normal;
+}
+
+.form-control {
+    background-color: var(--form-bg-color);
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+    box-shadow: inset 0 0 5px var(--shadow-color);
+}
+
+    .form-control::placeholder {
+        color: #999;
+        font-style: italic;
+    }
+
+/* Labels */
+label {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Floating Label Fix for Placeholder Overlap */
+.form-floating .form-control:not(:placeholder-shown):not(:focus) + label {
+    opacity: 1;
+    transform: translateY(-1.5rem) scale(0.85);
+}
+
+.form-floating .form-control:focus + label {
+    opacity: 1;
+    transform: translateY(-0.65rem) scale(0.85);
+}
+
+.form-floating .form-control::placeholder {
+    opacity: 0;
+}
+
+.form-floating .form-control:focus::placeholder {
+    opacity: 1;
+}
+
+/* Validation Error Styling */
+.text-danger {
+    color: #ff6b6b !important;
+}
+
+/* Custom styles for autofilled input fields */
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:hover,
+.form-control:-webkit-autofill:focus,
+.form-control:-webkit-autofill:active {
+    box-shadow: 0 0 0 1000px var(--form-bg-color) inset !important;
+    -webkit-text-fill-color: var(--text-color) !important;
+    transition: background-color 5000s ease-in-out 0s;
+}

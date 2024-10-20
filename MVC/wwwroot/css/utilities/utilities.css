@@ -1,0 +1,31 @@
+﻿/* utilities.css */
+
+/* ====================================================
+   Utility Classes
+   ==================================================== */
+/* Primary Background and Text Colors */
+.bg-primary-custom {
+    background-color: var(--primary-color) !important;
+}
+
+.text-primary-custom {
+    color: var(--primary-color) !important;
+}
+
+/* Secondary Background and Text Colors */
+.bg-secondary-custom {
+    background-color: var(--secondary-color) !important;
+}
+
+.text-secondary-custom {
+    color: var(--secondary-color) !important;
+}
+
+/* Accent Background and Text Colors */
+.bg-accent-custom {
+    background-color: var(--accent-color) !important;
+}
+
+.text-accent-custom {
+    color: var(--accent-color) !important;
+}
